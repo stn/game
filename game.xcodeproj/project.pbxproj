@@ -6,10 +6,45 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		E9C45B8F159CA29300FBB95A /* claude.cc in Sources */ = {isa = PBXBuildFile; fileRef = E9C45B8E159CA29300FBB95A /* claude.cc */; };
+		E9C45B91159CA2B700FBB95A /* claude_main.cc in Sources */ = {isa = PBXBuildFile; fileRef = E9C45B90159CA2B700FBB95A /* claude_main.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9C45B80159CA1EA00FBB95A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E9C45B82159CA1EA00FBB95A /* claude */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = claude; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C45B8D159CA27500FBB95A /* claude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = claude.h; path = chess/claude/claude.h; sourceTree = SOURCE_ROOT; };
+		E9C45B8E159CA29300FBB95A /* claude.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = claude.cc; path = chess/claude/claude.cc; sourceTree = SOURCE_ROOT; };
+		E9C45B90159CA2B700FBB95A /* claude_main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = claude_main.cc; path = chess/claude/claude_main.cc; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9C45B7F159CA1EA00FBB95A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
 /* Begin PBXGroup section */
 		E9C45B55159C991900FBB95A = {
 			isa = PBXGroup;
 			children = (
+				E9C45B8C159CA21000FBB95A /* chess */,
 				E9C45B61159C991900FBB95A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -17,11 +52,50 @@
 		E9C45B61159C991900FBB95A /* Products */ = {
 			isa = PBXGroup;
 			children = (
+				E9C45B82159CA1EA00FBB95A /* claude */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
+		E9C45B84159CA1EA00FBB95A /* claude */ = {
+			isa = PBXGroup;
+			children = (
+				E9C45B8D159CA27500FBB95A /* claude.h */,
+				E9C45B8E159CA29300FBB95A /* claude.cc */,
+				E9C45B90159CA2B700FBB95A /* claude_main.cc */,
+			);
+			path = claude;
+			sourceTree = "<group>";
+		};
+		E9C45B8C159CA21000FBB95A /* chess */ = {
+			isa = PBXGroup;
+			children = (
+				E9C45B84159CA1EA00FBB95A /* claude */,
+			);
+			name = chess;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9C45B81159CA1EA00FBB95A /* claude */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C45B89159CA1EA00FBB95A /* Build configuration list for PBXNativeTarget "claude" */;
+			buildPhases = (
+				E9C45B7E159CA1EA00FBB95A /* Sources */,
+				E9C45B7F159CA1EA00FBB95A /* Frameworks */,
+				E9C45B80159CA1EA00FBB95A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = claude;
+			productName = claude;
+			productReference = E9C45B82159CA1EA00FBB95A /* claude */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E9C45B57159C991900FBB95A /* Project object */ = {
@@ -41,9 +115,22 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				E9C45B81159CA1EA00FBB95A /* claude */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9C45B7E159CA1EA00FBB95A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C45B8F159CA29300FBB95A /* claude.cc in Sources */,
+				E9C45B91159CA2B700FBB95A /* claude_main.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		E9C45B68159C991900FBB95A /* Debug */ = {
@@ -91,6 +178,20 @@
 			};
 			name = Release;
 		};
+		E9C45B8A159CA1EA00FBB95A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9C45B8B159CA1EA00FBB95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -102,6 +203,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E9C45B89159CA1EA00FBB95A /* Build configuration list for PBXNativeTarget "claude" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C45B8A159CA1EA00FBB95A /* Debug */,
+				E9C45B8B159CA1EA00FBB95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
