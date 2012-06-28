@@ -6,45 +6,10 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		E9C45B65159C991900FBB95A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E9C45B64159C991900FBB95A /* main.cpp */; };
-		E9C45B67159C991900FBB95A /* game.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = E9C45B66159C991900FBB95A /* game.1 */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		E9C45B5E159C991900FBB95A /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
-			files = (
-				E9C45B67159C991900FBB95A /* game.1 in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 1;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
-/* Begin PBXFileReference section */
-		E9C45B60159C991900FBB95A /* game */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = game; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9C45B64159C991900FBB95A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		E9C45B66159C991900FBB95A /* game.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = game.1; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		E9C45B5D159C991900FBB95A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
 		E9C45B55159C991900FBB95A = {
 			isa = PBXGroup;
 			children = (
-				E9C45B63159C991900FBB95A /* game */,
 				E9C45B61159C991900FBB95A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,41 +17,11 @@
 		E9C45B61159C991900FBB95A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E9C45B60159C991900FBB95A /* game */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E9C45B63159C991900FBB95A /* game */ = {
-			isa = PBXGroup;
-			children = (
-				E9C45B64159C991900FBB95A /* main.cpp */,
-				E9C45B66159C991900FBB95A /* game.1 */,
-			);
-			path = game;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		E9C45B5F159C991900FBB95A /* game */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E9C45B6A159C991900FBB95A /* Build configuration list for PBXNativeTarget "game" */;
-			buildPhases = (
-				E9C45B5C159C991900FBB95A /* Sources */,
-				E9C45B5D159C991900FBB95A /* Frameworks */,
-				E9C45B5E159C991900FBB95A /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = game;
-			productName = game;
-			productReference = E9C45B60159C991900FBB95A /* game */;
-			productType = "com.apple.product-type.tool";
-		};
-/* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E9C45B57159C991900FBB95A /* Project object */ = {
@@ -106,21 +41,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E9C45B5F159C991900FBB95A /* game */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXSourcesBuildPhase section */
-		E9C45B5C159C991900FBB95A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E9C45B65159C991900FBB95A /* main.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		E9C45B68159C991900FBB95A /* Debug */ = {
@@ -168,20 +91,6 @@
 			};
 			name = Release;
 		};
-		E9C45B6B159C991900FBB95A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		E9C45B6C159C991900FBB95A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -193,14 +102,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		E9C45B6A159C991900FBB95A /* Build configuration list for PBXNativeTarget "game" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E9C45B6B159C991900FBB95A /* Debug */,
-				E9C45B6C159C991900FBB95A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
