@@ -9,10 +9,22 @@
 /* Begin PBXBuildFile section */
 		E9C45B8F159CA29300FBB95A /* claude.cc in Sources */ = {isa = PBXBuildFile; fileRef = E9C45B8E159CA29300FBB95A /* claude.cc */; };
 		E9C45B91159CA2B700FBB95A /* claude_main.cc in Sources */ = {isa = PBXBuildFile; fileRef = E9C45B90159CA2B700FBB95A /* claude_main.cc */; };
+		E9C45BA2159EF51A00FBB95A /* claude.h in Sources */ = {isa = PBXBuildFile; fileRef = E9C45B8D159CA27500FBB95A /* claude.h */; };
+		E9C45BA3159EF51A00FBB95A /* claude.cc in Sources */ = {isa = PBXBuildFile; fileRef = E9C45B8E159CA29300FBB95A /* claude.cc */; };
+		E9C45BA4159EF51A00FBB95A /* claude_uci.cc in Sources */ = {isa = PBXBuildFile; fileRef = E9C45B92159EF49100FBB95A /* claude_uci.cc */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		E9C45B80159CA1EA00FBB95A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		E9C45B96159EF50300FBB95A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -28,10 +40,19 @@
 		E9C45B8D159CA27500FBB95A /* claude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = claude.h; path = chess/claude/claude.h; sourceTree = SOURCE_ROOT; };
 		E9C45B8E159CA29300FBB95A /* claude.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = claude.cc; path = chess/claude/claude.cc; sourceTree = SOURCE_ROOT; };
 		E9C45B90159CA2B700FBB95A /* claude_main.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = claude_main.cc; path = chess/claude/claude_main.cc; sourceTree = SOURCE_ROOT; };
+		E9C45B92159EF49100FBB95A /* claude_uci.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = claude_uci.cc; path = chess/claude/claude_uci.cc; sourceTree = SOURCE_ROOT; };
+		E9C45B98159EF50300FBB95A /* claude_uci */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = claude_uci; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E9C45B7F159CA1EA00FBB95A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C45B95159EF50300FBB95A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				E9C45B82159CA1EA00FBB95A /* claude */,
+				E9C45B98159EF50300FBB95A /* claude_uci */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,6 +85,7 @@
 				E9C45B8D159CA27500FBB95A /* claude.h */,
 				E9C45B8E159CA29300FBB95A /* claude.cc */,
 				E9C45B90159CA2B700FBB95A /* claude_main.cc */,
+				E9C45B92159EF49100FBB95A /* claude_uci.cc */,
 			);
 			path = claude;
 			sourceTree = "<group>";
@@ -95,6 +118,23 @@
 			productReference = E9C45B82159CA1EA00FBB95A /* claude */;
 			productType = "com.apple.product-type.tool";
 		};
+		E9C45B97159EF50300FBB95A /* claude_uci */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9C45B9F159EF50300FBB95A /* Build configuration list for PBXNativeTarget "claude_uci" */;
+			buildPhases = (
+				E9C45B94159EF50300FBB95A /* Sources */,
+				E9C45B95159EF50300FBB95A /* Frameworks */,
+				E9C45B96159EF50300FBB95A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = claude_uci;
+			productName = claude_uci;
+			productReference = E9C45B98159EF50300FBB95A /* claude_uci */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -116,6 +156,7 @@
 			projectRoot = "";
 			targets = (
 				E9C45B81159CA1EA00FBB95A /* claude */,
+				E9C45B97159EF50300FBB95A /* claude_uci */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +168,16 @@
 			files = (
 				E9C45B8F159CA29300FBB95A /* claude.cc in Sources */,
 				E9C45B91159CA2B700FBB95A /* claude_main.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9C45B94159EF50300FBB95A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9C45BA2159EF51A00FBB95A /* claude.h in Sources */,
+				E9C45BA3159EF51A00FBB95A /* claude.cc in Sources */,
+				E9C45BA4159EF51A00FBB95A /* claude_uci.cc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +243,20 @@
 			};
 			name = Release;
 		};
+		E9C45BA0159EF50300FBB95A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E9C45BA1159EF50300FBB95A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -209,6 +274,14 @@
 			buildConfigurations = (
 				E9C45B8A159CA1EA00FBB95A /* Debug */,
 				E9C45B8B159CA1EA00FBB95A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E9C45B9F159EF50300FBB95A /* Build configuration list for PBXNativeTarget "claude_uci" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9C45BA0159EF50300FBB95A /* Debug */,
+				E9C45BA1159EF50300FBB95A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
